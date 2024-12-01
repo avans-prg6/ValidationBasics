@@ -1,4 +1,4 @@
-﻿namespace RoosterApp.Models
+﻿namespace RoosterApp.Services
 {
     public class CAOService
     {

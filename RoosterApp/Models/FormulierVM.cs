@@ -1,6 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using RoosterApp.Attributes;
+using System.ComponentModel.DataAnnotations;
 
-namespace RoosterApp.Controllers
+
+namespace RoosterApp.Models
 {
     public class FormulierVM : IValidatableObject
     {

@@ -1,8 +1,9 @@
-﻿using RoosterApp.Models;
+﻿
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using RoosterApp.Services;
 
-namespace RoosterApp.Controllers
+namespace RoosterApp.Attributes
 {
     public class CannotContainAttribute : ValidationAttribute
     {
@@ -17,7 +18,7 @@ namespace RoosterApp.Controllers
         {
             var caoService = context.GetRequiredService<CAOService>();
 
-            String Naam = (string)value;
+            string Naam = (string)value;
 
             if (Naam.ToUpper().Contains(_thechar)) //WHO DID THIS?!
             {
